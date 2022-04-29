@@ -8,10 +8,10 @@
     - name: create simple service template
       become: true
       template:
-        src: sample.service.j2
-        dest: /etc/systemd/system/sample.service
-    - name: run sample service
+        src: sample-ruby.service.j2
+        dest: /etc/systemd/system/sample-ruby.service
+    - name: run sample-ruby service
       become: true
       ansible.builtin.systemd:
         state: restarted
-        name: sample
+        name: sample-ruby
