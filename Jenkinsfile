@@ -12,7 +12,7 @@ pipeline {
   stages {
     stage('Copy artifact') {
       steps {
-        copyArtifacts filter: 'main.rb', fingerprintArtifacts: true, projectName: 'sample-ruby-deploy', selector: lastSuccessful()
+        copyArtifacts filter: 'sample-ruby', fingerprintArtifacts: true, projectName: 'sample-ruby-deploy', selector: lastSuccessful()
       }
     }
     stage('Deliver') {
