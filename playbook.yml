@@ -4,9 +4,9 @@
       ansible.builtin.copy:
         src: sample-ruby
         dest: /home/vagrant/sample-ruby
-        # mode: "0777"
+        mode: "0777"
         
-    - name: rubyinstall
+    - name: ruby install
       command: sudo yum install -y ruby.x86_64
       tags: ruby
       
