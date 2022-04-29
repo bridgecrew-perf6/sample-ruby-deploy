@@ -3,8 +3,9 @@ Description=Simple service with API written in Go
 After=network.target
 
 [Service]
+User: vagrant
 Type=simple
-ExecStart=/home/vagrant/sample-ruby
+ExecStart=/usr/bin/ruby /home/vagrant/web.rb
 PIDFile=/var/run/sample
 
 [Install]
