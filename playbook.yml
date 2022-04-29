@@ -6,12 +6,6 @@
         dest: /home/vagrant/sample-ruby
         # mode: "0777"
         
-    - name: install necessary dependency
-      command: gem install sinatra -v1.4.8
-      
-    - name: execution
-      command: ruby main.rb
-      
     - name: create simple service template
       become: true
       template:
