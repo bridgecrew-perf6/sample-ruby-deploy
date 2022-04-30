@@ -1,7 +1,7 @@
 pipeline {
   agent any
     parameters {
-  choice choices: ['qa', 'production'], description: 'Select environment for deployment', name: 'DEPLOY_TO'
+  choice choices: ['qa', 'production' , 'cloud'], description: 'Select environment for deployment', name: 'DEPLOY_TO'
 
     string(name: 'upstreamJobName',
           defaultValue: '',
