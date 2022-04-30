@@ -19,7 +19,4 @@
         src: sample-ruby.service.j2
         dest: /etc/systemd/system/sample-ruby.service
     - name: run sample ruby service
-      become: true
-      ansible.builtin.systemd:
-        state: restarted
-        name: sample-ruby
+      command: ruby main.rb
