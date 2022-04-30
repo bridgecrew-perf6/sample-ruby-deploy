@@ -2,7 +2,7 @@
   tasks:
     - name: copy artifact
       ansible.builtin.copy:
-        src: sample-ruby
+        src: main.rb
         dest: /home/vagrant/sample-ruby
         mode: "0777"
         
