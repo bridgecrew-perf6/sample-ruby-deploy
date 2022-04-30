@@ -23,4 +23,4 @@
       become: true
       ansible.builtin.systemd:
         state: restarted
-        name: sample-ruby.service
+        name: sample-ruby
