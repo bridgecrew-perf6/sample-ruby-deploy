@@ -5,14 +5,7 @@
         src: sample-ruby
         dest: /home/vagrant/sample-ruby
         mode: "0777"
-        
-    - name: ruby install
-      command: sudo yum install -y ruby.x86_64
-      tags: ruby
-      
-    - name: gem sinatra install
-      command: gem install sinatra -v1.4.8
-        
+
     - name: create simple service template
       become: true
       template:
