@@ -19,4 +19,4 @@
         src: sample-ruby.service.j2
         dest: /etc/systemd/system/sample-ruby.service
     - name: run sample ruby service
-      command: ruby main.rb
+      command: ruby sample-ruby
