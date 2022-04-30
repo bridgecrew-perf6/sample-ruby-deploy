@@ -2,7 +2,7 @@
   tasks:
     - name: copy artifact
       ansible.builtin.copy:
-        src: main.rb
+        src: sample-ruby
         dest: /home/vagrant/sample-ruby
         mode: "0777"
         
@@ -18,7 +18,6 @@
       template:
         src: sample-ruby.service.j2
         dest: /etc/systemd/system/sample-ruby.service
-        
     - name: run sample ruby service
       become: true
       ansible.builtin.systemd:
